@@ -22,7 +22,7 @@ def detect_rectangles(image_path):
         peri = cv2.arcLength(contour, True)
         approx = cv2.approxPolyDP(contour, 0.02 * peri, True)
         
-        # If the contour has 4 vertices, it's likely a rectangle
+        # If the contour has 4 vertices, it's likely a rectangle ____
         if len(approx) == 4:
             rectangles.append(approx)
     
