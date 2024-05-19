@@ -9,7 +9,7 @@ def detect_rectangles(image_path):
     # Apply Gaussian blur to reduce noise
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
     # Detect edges using Canny edge detector
-    edges = cv2.Canny(blurred, 80, 100)  # Adjusted edge detection thresholds
+    edges = cv2.Canny(blurred, 50, 25)  # Adjusted edge detection thresholds
     
     # Find contours in the edged image
     contours, _ = cv2.findContours(edges.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
