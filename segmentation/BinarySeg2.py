@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image_path = 'segmentation\simple1.jpg'  
+image_path = 'segmentation\datasets\simple2.jpg'  
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Apply Gaussian Blur to smooth the image
