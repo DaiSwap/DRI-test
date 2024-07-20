@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the image in grayscale
-image_path = 'segmentation\datasets\simple2.jpg'
+image_path = 'segmentation\datasets\road1.jpg'
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Apply manual thresholding
