@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image_path = 'segmentation\datasets\road1.jpg'  
+image_path = 'segmentation/datasets/simple2.jpg'  
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Apply Gaussian Blur to smooth the image
@@ -18,7 +18,7 @@ plt.title("Original Image")
 plt.imshow(image, cmap='gray')
 
 plt.subplot(1, 2, 2)
-plt.title("Binary Segmentation")
+plt.title("Otsu threshold Segmentation")
 plt.imshow(binary, cmap='gray')
 plt.show()
 

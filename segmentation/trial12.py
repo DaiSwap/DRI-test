@@ -1,9 +1,8 @@
 import cv2
-import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the image in grayscale
-image_path = 'segmentation\datasets\road1.jpg'  # Replace with your image path
+image_path = 'segmentation\datasets\simple2.jpg'  # Replace with your image path
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Apply Otsu's thresholding
@@ -20,11 +19,11 @@ plt.title("Original Image")
 plt.imshow(image, cmap='gray')
 
 plt.subplot(1, 3, 2)
-plt.title("Otsu's Binary Segmentation")
+plt.title("Threshold Binary Segmentation")
 plt.imshow(binary_otsu, cmap='gray')
 
 plt.subplot(1, 3, 3)
-plt.title("Inverted Binary Segmentation")
+plt.title("Inverted Threshold Binary Segmentation")
 plt.imshow(binary_inverted, cmap='gray')
 
 plt.show()
